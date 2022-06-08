@@ -36,6 +36,10 @@
 /* BASE STYLES
 /*******************************************/
 
+.container {
+  display: flex;
+}
+
 .textLight {
   font-family: "poppins-light";
 }
@@ -121,9 +125,37 @@ main section h4 {
 }
 
 .sectionAbout {
-  background-color: rgb(243, 243, 243);
+  min-height: 700px;
 }
 
+.sectionWork {
+  min-height: 500px;
+  padding-top: 100px;
+}
+
+.sectionWork .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  
+}
+
+.sectionWork .item:first-child {
+  margin-left: 60px;
+}
+
+.sectionWork .item:last-child {
+  margin-right: 20px;
+}
+
+.sectionAbout .imgBG {
+  max-height: 700px;
+  height: 100vh;
+  background-color: rgb(243, 243, 243);
+  background-image: url("../public/variety.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 50px 50px;
+}
 
 .sectionAbout h2, .sectionAbout h4 {
   text-align: left;
@@ -232,8 +264,8 @@ main .btn {
 .aboutContainer {
   padding-top: 50px;
   max-width: 500px;
-  margin-left: 600px;
   min-height: 450px;
+  margin-right: 30px;
 }
 
 
@@ -248,12 +280,6 @@ main .btn {
     max-width: 500px;
     margin: 0 auto;
     padding-left: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .aboutContainer {
-    margin-left: 50%;
   }
 }
 
